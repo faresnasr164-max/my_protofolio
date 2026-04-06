@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>#projects {
+    text-align: center;
+}
+
+/* يخلي الكروت جنب بعض */
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* الكارت */
+.card {
+    background: white;
+    width: 350px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* الصور */
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+/* تفاصيل */
+.card details {
+    margin-top: 10px;
+    text-align: left;
+}
+
+/* تأثير لما تحط الماوس */
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}</style>
+    <meta charset="utf-8"/>
+    <meta name="protofolio" content="protofolio,اعمال وشغل"/>
+    <title>my protofolio</title>
+    <style>
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #111;
+            color: white;
+        }
+    </style>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Container لكل sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* عناوين */
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+/* Navbar */
+nav {
+    background-color: #111;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: rgba(247, 247, 247, 0.67);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #088eed;
+}
+
+/* Buttons */
+button, .btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #00bcd4;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover, .btn:hover {
+    background-color: #0097a7;
+}
+
+/* Cards (للـ projects مثلاً) */
+.card {
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: white;
+}
+</style>
+</head>
+<body  dir="ltr" >
+   <font size="6" face="arial" > <center><h1>Fares ismail mansour</h1></font> 
+    <h2>Mechatronics Engineer | Robotics Enthusiast</h2></center>
+  <center> <p> <strong>
+    Passionate about robotics, mechanical design, and selecting the right components for integrated systems.<br>
+     Experienced in robotics projects, system control, and simulation.<br>
+     I also enjoy teaching and sharing knowledge through my YouTube channel,<br>
+      while continuously improving my skills in MATLAB and programming (HTML, Python, C++).<br>
+</strong></p></center>
+<hr>
+<nav>
+    <button><a href="#about">About</a></button>
+    <button><a href="#skills"> skills  </a> </button>
+    <button> <a href="#projects">projects </a></button>
+    <button> <a href="#contact">contact</a></button>
+
+
+    
+</nav>
+<section id="about">
+    <h2>About me</h2>
+    <p> I am a Mechatronics Engineering student with a strong interest in robotics, mechanical design, and system integration. I enjoy selecting and combining the right components to build efficient and functional robotic systems.
+
+I have worked on several university-level robotics projects, where I gained hands-on experience in mechanical design, control integration, and system implementation. I am also familiar with simulation tools and MATLAB, which I use for analysis and development.
+
+In addition to my technical interests, I run a YouTube channel where I explain course content. I enjoy teaching, sharing knowledge, and continuously learning new skills. I have also studied programming languages such as HTML, Python, and C++.
+
+I am always motivated to improve my skills and apply my knowledge in practical projects.</p>
+
+
+
+
+</section>
+<section id="skills">
+    <h2>skills</h2>
+    <h3>Technical skills</h3>
+    <ul>
+<li>Mechanical Design</li>
+<li>Robotics System Design</li>
+<li>Control Integration</li>
+<li>Simulation</li>
+
+    </ul>
+<h3>Software & Tools</h3>
+<ul>
+<li>MATLAB</li>
+<li>proteus</li>
+<li>cade simu</li>
+<li>Python</li>
+<li>c++</li>
+<li>HTML</li>
+
+</ul>
+<h3>other skills</h3>
+<ul>
+<li>Teaching & Content Explanation</li>
+<li>YouTube Content Creation</li>
+<li>Continuous Learning</li>
+
+</ul>
+</section>
+<hr>
+<section id="projects">
+    <h2>projects</h2>
+    <div class="card">
+<h3>Robot Arm</h3>
+<img src="robotarm.png" alt="robotarm" width="400">
+<details>
+<summary>details</summary>
+<p><ul>
+This project is a robotic arm currently under development for a national competition <u>(Plaza Competition)</u>. The goal of the project is to design and implement a functional robotic arm capable of performing controlled movements with multiple degrees of freedom.<br>
+
+The system is built using multiple servo motors with different torque ratings to handle various joints of the arm:<br>
+
+<strong><li>DS3218 High Torque Servo for the base or main load-bearing joint</li>
+<li>MG996R Servo for intermediate joints</li>
+<li>SG90 Micro Servo for the gripper mechanism</li></strong>
+</ul>
+
+The robotic arm is designed with a focus on mechanical stability, proper component selection, and efficient control integration. Each motor is controlled using an external power source to ensure stable operation and to avoid overloading the main system.<br>
+
+The project aims to achieve precise movement control, smooth operation, and reliable performance, while maintaining a modular and scalable design suitable for further improvements.
+
+
+</p>
+
+
+
+
+
+</details>
+
+
+    </div>
+<div class="card">
+<h3>A robotic car</h3>
+<img src="robotic_car.png" width="400">
+<details>
+<p>This project is a smart robotic car currently under development as part of a team project. The work includes<br>
+     selecting appropriate components and designing the overall mechanical structure of the system.</p>
+
+<p>The design phase has been completed, and the selected components were chosen based on performance,<br>
+ compatibility, and system requirements. The project focuses on building a stable platform capable of integrating control systems and future automation features.<br></p>
+
+<p>The system is planned to be powered and controlled using an external control setup, ensuring flexibility and<br>
+ modularity in operation. The project aims to achieve a reliable mechanical design that can support further<br> development in control, sensing, and automation.</p>
+
+
+
+
+</details>
+
+
+
+
+
+</div>
+
+
+<div class="card">
+<h3>my first robot</h3>
+<img src="my_team.jpeg" width="400">
+<img src="tenkercad.jpeg" width="400">
+<img src="components.jpeg"width="400">
+<details>
+<p>
+This project is a Sumo robot developed as part of a university project. The main<br>
+ objective of the robot is to detect objects in its environment and respond autonomously<br>
+  by moving toward them, following a simple decision-making logic based on sensor input.</p><br>
+
+<p>The system is built around an Arduino Uno microcontroller, which acts as the main control unit.<br>
+     An ultrasonic sensor is used to detect obstacles in front of the robot by emitting ultrasonic waves<br>
+      and receiving their reflections. Based on the measured distance, the robot determines whether an object<br>
+       is within range.</p><br>
+
+<p>When an object is detected within a predefined distance, the robot moves forward to approach and engage with the target.<br>
+     If no object is detected, the robot continues to rotate in place to scan its surroundings and search for a target.</p><br>
+
+<p>The robot’s behavior is implemented using simple control logic that continuously reads data from the ultrasonic sensor<br>
+     and makes real-time decisions accordingly. This approach allows the robot to operate autonomously in a dynamic environment.</p><br>
+
+<p>This project helped me gain hands-on experience in embedded systems, sensor integration, and basic autonomous control logic,<br>
+     as well as practical implementation of Arduino-based systems.
+
+
+
+</p>
+
+
+</details>
+
+
+
+
+
+</div>
+
+<div class="youtube-section"><hr>
+    <h2>My YouTube Channel</h2>
+    <p>
+        I share engineering concepts, software tutorials, and my learning journey.
+        I have started creating content about MATLAB and other engineering tools.
+    </p>
+
+    <a href="https://www.youtube.com/@faresnasr-ek9yh" target="_blank">
+        <button>My Channel</button> 
+    </a>
+</div>
+
+
+
+</section>
+<hr>
+<section id="contact">
+    <h2>contact me</h2>
+<p>If you'd like to get in touch, feel free to reach out:</p>
+
+    <p>Email: nasrfares164@gmail.com</p>
+
+<hr>
+</section>
+
+
+<footer>
+    <p>© 2026 Faris Nasr. All rights reserved.</p>
+    <p>Mechatronics Engineer | Robotics Enthusiast</p>
+    <p>Built with HTML, CSS & Passion for Engineering</p>
+</footer>
+
+
+</body>
+
+</html>
